@@ -255,6 +255,10 @@ class Episode_Repository implements Service {
 			}
 		}
 
+		if ( $atts['tag'] ) {
+			$query_args['tag'] => $atts['tag']
+		}
+
 		// Allow dynamic filtering of query args
 		$query_args = apply_filters( 'ssp_podcast_playlist_query_args', $query_args );
 
