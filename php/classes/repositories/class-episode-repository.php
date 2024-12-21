@@ -256,7 +256,7 @@ class Episode_Repository implements Service {
 		}
 
 		if ( $atts['tag'] ) {
-			$query_args['tag'] => $atts['tag']
+			$query_args['tag'] = $atts['tag'];
 		}
 
 		// Allow dynamic filtering of query args
